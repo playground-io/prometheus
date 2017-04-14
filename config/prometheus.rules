@@ -1,0 +1,8 @@
+ALERT ProbeFailing
+  IF probe_success < 1
+  FOR 10s
+  LABELS { service = "backend" }
+  ANNOTATIONS {
+    summary = "probe {{$labels.job}} failing",
+    description = "probe {{$labels.job}} failing",
+  }
