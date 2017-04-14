@@ -8,6 +8,6 @@ stage('Pull') {
 
 stage('Deploy Whitebox Monitoring') {
     node {
-        bat 'docker-compose up -d'  
+        bat 'docker-compose up'  
     }
 }
