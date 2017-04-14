@@ -6,7 +6,7 @@ stage('Pull') {
     }
 }
 
-stage('Deploy Whitebox monitoring') {
+stage('Deploy Whitebox Monitoring') {
     node {
         bat 'docker-compose up -d'  
     }
